@@ -1,4 +1,4 @@
-cclass Chair(
+class Chair(
     val id: Int,                   // ID unik untuk setiap kursi
     val material: String,          // Bahan kursi
     var isOccupied: Boolean = false // Status kursi (default: tidak ditempati)
@@ -28,6 +28,7 @@ cclass Chair(
         return "Kursi(id=$id, bahan='$material', sedangDipakai=$isOccupied)"
     }
 }
+
 
 
 

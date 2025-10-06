@@ -7,6 +7,6 @@ class Curriculum(
 
     fun showSubjects() {
         println("Daftar Subject dalam Kurikulum:")
-        subjectList.forEach { println(it.name) }
+        subjectList.forEach { println(it.subjectName) }
     }
 }

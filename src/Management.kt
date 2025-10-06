@@ -1,6 +1,6 @@
 class Management(
-    val principal: Teacher,                // Kepala sekolah (1)
-    val managerList: MutableList<Teacher>, // Daftar manajer (1..*)
+    principal: Teacher,                // Kepala sekolah (1)
+    val managerList: MutableList<Teacher> = mutableListOf(), // Daftar manajer (1..*)
     val fieldManager: Staff                // Manajer lapangan (1)
 ) {
     // Fungsi untuk menampilkan info manajemen
@@ -17,4 +17,14 @@ class Management(
         managerList.add(teacher)
         println("Manager ${teacher.name} berhasil ditambahkan.")
     }
+
+    var principal: Teacher = principal
+        get() {
+            println("Mengambil data principal: ${field.name}")
+            return field
+        }
+        set(value) {
+            println("Mengubah principal dari ${field.name} menjadi ${value.name}")
+            field = value
+        }
 }

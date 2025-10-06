@@ -1,7 +1,7 @@
 class Chair(
   val id: Int,                   // ID unik untuk setiap kursi
-    val material: String,          // Bahan kursi
-    var isOccupied: Boolean = false // Status kursi (default: tidak ditempati)
+  val material: String,          // Bahan kursi
+  var isOccupied: Boolean = false // Status kursi (default: tidak ditempati)
 ) {
   // Fungsi untuk menandai kursi sedang digunakan
     fun occupy() {
